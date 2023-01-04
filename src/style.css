@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: url(./assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(8px);
+  height: 89vh;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 0;
+}
+
+.bigcont {
+  display: flex;
+  margin-left: 15%;
+  margin-top: 5%;
+  gap: 5rem;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+}
+
+.recentscores {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rc {
+  font-size: 34px;
+  width: 250px;
+}
+
+.brefresh {
+  width: 150px;
+  font-size: 24px;
+}
+
+.scorecards {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 5px;
+  border: 2px solid #000;
+  width: 100%;
+  margin-top: 5%;
+  overflow-y: scroll;
+  height: 300px;
+}
+
+.scorecards li:nth-child(odd) {
+  background-color: rgb(145, 199, 240);
+}
+
+.scard {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 24px;
+}
+
+.ays {
+  font-size: 30px;
+  width: 250px;
+}
+
+.scores-form {
+  display: flex;
+  margin-top: 15%;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.scores-form input {
+  padding: 0.6rem;
+  font-size: 20px;
+  width: 100%;
+}
+
+.bsubmit {
+  width: 150px;
+  font-size: 24px;
+}
