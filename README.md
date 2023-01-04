@@ -34,7 +34,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 To-Do List <a name="about-project"></a>
+# 📖 Leaderboard <a name="about-project"></a>
 
 "Leaderboard" is an application that allows user to register user names and their repective scores.
 
