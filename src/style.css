@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); </style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
   margin: 0;
@@ -53,7 +53,7 @@ h1 {
   width: 200px;
   font-size: 20px;
   font-family: 'Press Start 2P', cursive;
-  height:50px;
+  height: 50px;
   background-color: rgba(145, 199, 240, 0.5);
 }
 
@@ -91,7 +91,7 @@ h1 {
   padding-left: 5%;
   padding-right: 5%;
   font-size: 20px;
- }
+}
 
 .ays {
   font-family: 'Press Start 2P', cursive;
@@ -120,7 +120,7 @@ h1 {
   width: 200px;
   font-size: 20px;
   font-family: 'Press Start 2P', cursive;
-  height:50px;
+  height: 50px;
   background-color: rgba(165, 28, 26, 0.3);
 }
 
