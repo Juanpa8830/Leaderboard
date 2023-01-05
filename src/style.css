@@ -5,15 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  background: url(./assets/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(8px);
-  height: 89vh;
-}
-
 h1 {
   font-size: 5rem;
   margin-top: 5%;

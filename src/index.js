@@ -1,25 +1,29 @@
 import './style.css';
-import displayScores from './modules/displayScores.js';
-import addScore from './modules/addScore.js';
+import scorePost from './modules/score-post.js';
+import scoreGet from './modules/score-get.js';
 
-const scores = [];
-
+const form = document.getElementById('dataform');
+const buttonRefresh = document.getElementById('brefresh');
 const scoresList = document.getElementById('scorecards');
 
-class Score {
-  constructor(name, score) {
-    this.name = name;
-    this.score = score;
-  }
-}
-
-const form = document.getElementById('add-score');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const name = document.getElementById('name').value;
   const score = document.getElementById('score').value;
-  const newscore = new Score(name, score);
-  addScore(scores, newscore);
+  scorePost(name, score);
   form.reset();
-  displayScores(scores, scoresList);
+});
+
+buttonRefresh.addEventListener('click', async () => {
+  const scores = await scoreGet();
+  let scoreGenerator = '';
+  scores.forEach((score) => {
+    scoreGenerator += `
+      <li class="scard">
+          <p class="name">${score.user}</p>
+          <p class="score">${score.score}</p>
+      </li>
+          `;
+    scoresList.innerHTML = scoreGenerator;
+  });
 });
