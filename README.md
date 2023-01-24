@@ -79,7 +79,7 @@
 
 Clone this repository to your desired folder:
 
-git clone git@github.com:Juanpa8830/Todo-list.git
+git clone git@github.com:Juanpa8830/Leaderboard.git
 
 ### Install
 
